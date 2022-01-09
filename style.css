@@ -76,4 +76,21 @@
 }
 
 @media (max-width: 768px) {
+  .main-body {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: 80vw;
+    grid-auto-flow: column;
+    grid-auto-columns: 80vw;
+    overflow-x: auto;
+  }
+  .main-body article:nth-of-type(1),
+  .main-body article:nth-of-type(2),
+  .main-body article:nth-of-type(4),
+  .main-body article:nth-of-type(5) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .main-body article:nth-of-type(3) {
+  }
 }
